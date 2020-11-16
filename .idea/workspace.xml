@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5f6dc29-e783-4977-beb3-bf65c1884f51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="c5f6dc29-e783-4977-beb3-bf65c1884f51" name="Default Changelist" comment="puppeteer 기반 크롤러 샘플 추가">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +19,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.4" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.19.4" />
@@ -66,12 +68,24 @@
       <workItem from="1605439712016" duration="87000" />
       <workItem from="1605439860470" duration="8689000" />
       <workItem from="1605537458432" duration="917000" />
-      <workItem from="1605538407104" duration="6097000" />
+      <workItem from="1605538407104" duration="6266000" />
     </task>
+    <task id="LOCAL-00001" summary="puppeteer 기반 크롤러 샘플 추가">
+      <created>1605544660151</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605544660151</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="puppeteer 기반 크롤러 샘플 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="puppeteer 기반 크롤러 샘플 추가" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2064" y="0" width="1092" height="740" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605537657677">
@@ -103,6 +117,10 @@
     </state>
     <state width="1899" height="281" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605544206661" />
     <state width="1259" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1605442007720" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605544669928">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605544669928" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605542121302">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
