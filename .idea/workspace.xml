@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c5f6dc29-e783-4977-beb3-bf65c1884f51" name="Default Changelist" comment="puppeteer 기반 크롤러 샘플 추가">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ssho-item-lambda.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +75,7 @@
       <workItem from="1605439712016" duration="87000" />
       <workItem from="1605439860470" duration="8689000" />
       <workItem from="1605537458432" duration="917000" />
-      <workItem from="1605538407104" duration="6432000" />
+      <workItem from="1605538407104" duration="6506000" />
     </task>
     <task id="LOCAL-00001" summary="puppeteer 기반 크롤러 샘플 추가">
       <created>1605544660151</created>
@@ -106,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605544822860</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="puppeteer 기반 크롤러 샘플 추가">
+      <created>1605544854002</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605544854002</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,10 +159,10 @@
     </state>
     <state width="1899" height="281" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605544206661" />
     <state width="1259" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1605442007720" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605544835703">
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605544856185">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605544835703" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605544856185" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605542121302">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
