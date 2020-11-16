@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5f6dc29-e783-4977-beb3-bf65c1884f51" name="Default Changelist" comment="puppeteer 기반 크롤러 샘플 추가">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c5f6dc29-e783-4977-beb3-bf65c1884f51" name="Default Changelist" comment="puppeteer 기반 크롤러 샘플 추가" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +17,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -69,7 +67,7 @@
       <workItem from="1605439712016" duration="87000" />
       <workItem from="1605439860470" duration="8689000" />
       <workItem from="1605537458432" duration="917000" />
-      <workItem from="1605538407104" duration="6369000" />
+      <workItem from="1605538407104" duration="6402000" />
     </task>
     <task id="LOCAL-00001" summary="puppeteer 기반 크롤러 샘플 추가">
       <created>1605544660151</created>
@@ -92,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605544742274</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="puppeteer 기반 크롤러 샘플 추가">
+      <created>1605544800523</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605544800523</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
