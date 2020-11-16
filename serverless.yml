@@ -1,0 +1,19 @@
+service: ssho-item-crawler
+frameworkVersion: "2"
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: ap-northeast-2
+  timeout: 900
+  apiGateway:
+    shouldStartNameWithService: true
+
+functions:
+  sample:
+    handler: src/handler.sample
+    events:
+      - http:
+          path: hello
+          method: get

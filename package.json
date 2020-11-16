@@ -1,0 +1,26 @@
+{
+  "name": "ssho-item-crawler",
+  "version": "1.0.0",
+  "description": "스쇼 데이터 분석 및 집계 백엔드 서버",
+  "main": "src/handler.js",
+  "scripts": {
+    "start-local": "sls invoke local --function sample"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssho-lab/ssho-item-crawler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssho-lab/ssho-item-crawler/issues"
+  },
+  "dependencies": {
+    "chrome-aws-lambda": "^5.3.1",
+    "puppeteer-core": "^5.5.0"
+  },
+  "devDependencies": {
+    "puppeteer": "^5.5.0"
+  }
+}
