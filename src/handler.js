@@ -11,37 +11,12 @@ const createResponse = (status, body) => ({
     body: JSON.stringify(body),
 });
 
-const parsePrice = (text) => {
-    return text.includes("→")?
-
-            text.split(" → ")[0]
-                .replace(",","")
-                .replace("원","")
-                .replace(" ", "") :
-            text.replace(",", "")
-                .replace("원", "")
-                .replace(" ", "")
-}
-
-const parseDiscPrice = (text) => {
-    return text.includes("→")?
-            text.split(" → ")[1]
-                .replace(",","")
-                .replace("원","")
-                .replace(" ", "") :
-
-            text.replace(",", "")
-                .replace("원", "")
-                .replace(" ", "")
-}
-
 // 샘플 - 스타일난다
 module.exports.sample = async () => {
 
     // headless 초기화
     const { browser, page } = await initializeHeadless(URL.STYLENANDA)
 
-    // 각 서비스 모듈 호출
     try {
 
         const categoryList = ['아우터', '탑', '드레스', '스커트', '팬츠', '가방', '슈즈', '악세서리', '썸머']
@@ -51,14 +26,36 @@ module.exports.sample = async () => {
 
             let index = categoryList.indexOf(cat);
 
+            // 카테고리 선택
             await page.waitForSelector(SELECTOR.STYLENANDA_CATEGORY)
             await page.click(SELECTOR.STYLENANDA_CATEGORY_BUTTON[index])
+            
+            //TODO: 페이지 이동 및 마지막 페이지 체크 로직 추가 
 
+            // 상품 리스트(보드) 조회
+            await page.waitForSelector(SELECTOR.STYLENANDA_ITEM_BOARD)
             let itemList = await page.$$eval(SELECTOR.STYLENANDA_ITEM_BOARD, board => board.map(item => {
 
                 let priceTxt = item.querySelector('.table > div:last-child > .price').innerText
-                let price = parsePrice(priceTxt)
-                let discPrice = parseDiscPrice(priceTxt)
+
+                let price = priceTxt.includes("→")?
+                    priceTxt.split(" → ")[0]
+                        .replace(",","")
+                        .replace("원","")
+                        .replace(" ", "") :
+                    priceTxt.replace(",", "")
+                        .replace("원", "")
+                        .replace(" ", "")
+
+                let discPrice = priceTxt.includes("→")?
+                    priceTxt.split(" → ")[1]
+                        .replace(",","")
+                        .replace("원","")
+                        .replace(" ", "") :
+
+                    priceTxt.replace(",", "")
+                        .replace("원", "")
+                        .replace(" ", "")
 
                 return {
                     url: item.querySelector('.box > a').href,
@@ -78,11 +75,18 @@ module.exports.sample = async () => {
             res = res.concat(itemList)
         }
 
-        browser.close()
+        // headless pages, browser 종료
+        let pages = await browser.pages()
+        await Promise.all(pages.map(page =>page.close()))
+        await browser.close()
+
         return createResponse(200, res)
     }
     catch (e){
-        browser.close()
+        let pages = await browser.pages()
+        await Promise.all(pages.map(page =>page.close()))
+        await browser.close()
+
         process.exit()
     }
 }

@@ -11,6 +11,7 @@ module.exports.SELECTOR = {
         '#container > #header > #main_cate01 > li:nth-child(14)',
         '#container > #header > #main_cate01 > li:nth-child(15)'
     ],
-    STYLENANDA_ITEM_BOARD: '#product > ul > li'
+    //STYLENANDA_ITEM_BOARD: '#product > ul > li'
+    STYLENANDA_ITEM_BOARD: '#container > #content > #cont-wrap > #product-wrap > #product > ul > li'
 }
 

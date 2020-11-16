@@ -8,18 +8,8 @@ const chromium = require('chrome-aws-lambda');
 module.exports.initializeHeadless = async(targetUrl) => {
 
     const BROWSER_OPTION = {
-
         headless: chromium.headless,
-
         args: chromium.args,
-
-        /*
-        args: [
-            '--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu'
-        ],
-
-         */
-
         executablePath: await chromium.executablePath,
         defaultViewport: chromium.defaultViewport,
         slowMo: 100,
